@@ -3,6 +3,7 @@ let
 
   hello = pkgs.writeShellScriptBin "hello" ''
     echo "Hello from the Nix channel overlay!"
+    echo "New version"
   '';
 
   pkgs = import sources.nixpkgs {
